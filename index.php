@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
-</head>
-<body>
-  
-</body>
-</html>
+<?php 
+$page = isset($_GET['ref']) ? $_GET['ref'] : "main";
+
+include "./files/includes/header.php";
+include "./files/$page.php";
+include "./files/includes/footer.php";
